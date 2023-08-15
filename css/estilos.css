@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    color: black;
+    background-image: url(/images/skateparkbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/******Header ******/
+
+header {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: #ece2c6;
+    border-bottom: 2px solid #000000;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 150px;
+}
+
+.firstTitle{
+    color: white;
+}
+.secondTitle {
+    color: #228B22;
+}
+
+.linkNav {
+    color: #228B22;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+}
+
+.linkNav:hover {
+    background-color: #228B22;
+    color: white;
+    border-radius: 15px;
+}
+
+/*********** Home *************/
+.main {
+    font-family: 'Roboto Slab', sans-serif;
+    background-image: url(/images/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    padding: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.contenedorMain {
+    width: 50%;
+    background-color: #ece2c6;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 7px 0px #7d8471;
+}
+
+.contenedorMain h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contenedorMain p {
+    font-size: 1.5rem;
+
+}
+
+.divisionPagina {
+    font-family: 'Roboto Slab', sans-serif;
+    background: #ece2c6;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 0px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 35px rgb(125, 132, 113);
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #ece2c6;
+    box-shadow: 5px 5px 5px 5px #7d8471;
+}
+
+.box h3 {
+    border-bottom: 2px solid #7d8471;
+    font-size: 2rem;
+}
+
+.box p {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.2rem
+}
+svg {
+    width: 40px;
+    color: #000000;
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.linkFooter:hover {
+    background-color: #000000;
+    border-radius: 15px;
+    color: white;
+}
+/**** About Us *****/
+.tituloServicios h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    border-bottom: #228B22 3px solid;
+}
+
+.cardPrincipales {
+    border: none;
+    box-shadow: 0px 5px 15px black;
+    height: 500px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.colorBtn {
+    background-color: #228B22;
+    color: #ece2c6;
+}
+
+.cardSecundarias {
+    border: none;
+    box-shadow: 0px 5px 15px black;
+    height: 350px;
+}
+
+/* Contacts */
+
+main container mb-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); 
+
+}
+
+.form {
+    background-color: #ece2c6c5;
+    box-shadow: 0px 2px px rgb(112, 111, 111);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.button {
+    background-color: #228b22ce;
+    color: #ece2c6;
+    border: none;
+    width: 100%;
+    max-width: 150px; 
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+label {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+input {
+    box-shadow: 5px 10px 5px #474747;
+}
+
+textarea {
+    box-shadow: 10px 10px 5px #424242;
+}
+
+.form-control {
+    margin: 20px 0;
+}
+
+.formularioTitulo {
+    border-bottom: #228B22 3px solid;
+}
+
+/********* FAQ **********/
+
+
+/********** AboutUs ************/
+
+.about-conteiner{
+    background-color: #ece2c6 ;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.carousel-inner {
+    display: flex;
+    max-height: 300px; 
+    overflow: hidden; /
+}
+
+.carousel-item {
+    flex: 0 0 auto; 
+    width: 100%; 
+}
+
+.carousel-item img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+}
+
+/******************************************* VISTA MOBILE *******************************************/
+@media (max-width:501px) {
+    body {
+        background-image: url(/images/skateparkbackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    
+    .navbar-brand {
+        align-items: flex-end;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        padding-left: 5px;
+    }
+
+    
+    .main {
+        background-image: none;
+        padding: 10px;
+    }
+
+    .contenedorMain {
+        width: auto;
+        height: auto;
+    }
+
+    .contenedorMain h2 {
+        font-size: 1.5rem;
+    }
+
+    .contenedorMain p {
+        font-size: 1rem;
+
+    }
+
+    .divisionPagina {
+        font-size: 1.2rem;
+        padding: 15px 0px;
+        border-radius: 15px;
+    }
+
+    .box {
+        background-color: #ece2c6;
+    }
+
+    .box h3 {
+        font-size: 1.5rem;
+    }
+
+    
+    footer {
+        background-color: #ece2c6;
+    }
+
+    
+    .tituloServicios h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        height: 550px;
+        margin-top: 20px;
+    }
+
+    
+    .formularioTitulo h2 {
+        font-size: 1.3rem;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    
+    .divisor {
+        margin: 10px 0;
+    }
+
+    .divisor h3 {
+        font-size: 1.4rem;
+    }
+
+    .quienesSomosTitulo {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .carousel-item {
+        height: auto;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.6rem;
+    }
+}
+
+/********************************* VISTA TABLET ********************/
+@media (min-width:501px) and (max-width:1400px) {
+
+    
+    h1 {
+        font-size: 1.9rem;
+    }
+
+
+
+    .contenedorMain {
+        width: auto;
+        height: auto;
+    }
+
+    .contenedorMain h2 {
+        font-size: 2rem;
+    }
+
+    .contenedorMain p {
+        font-size: 1.2rem;
+    }
+
+    
+    .tituloServicios h2 {
+        font-size: 2.5rem;
+
+    }
+
+    .card {
+        height: 540px;
+        margin-top: 20px;
+    }
+
+   
+    .quienesSomosTitulo {
+        font-size: 2.5rem;
+    }
+
+    .divisor {
+        margin: 10px 0;
+    }
+
+    .divisor h3 {
+        font-size: 2rem;
+    }
+
+    .carousel-item {
+        height: 320px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}

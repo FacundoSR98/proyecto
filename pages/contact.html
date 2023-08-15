@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css"">
+    <link rel="shortcut icon" href="../images/lacosteLogo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+            </style>
+   
+    <title>Pontela Quitatela</title>
+</head>
+
+<body class="container-fluid">
+    <!-- HEADER -->
+    <header class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../images/logoP.png" alt="Site Logo">
+                <h1><span class="firstTitle">Pontela</span><span class="secondTitle">Quitatela</span></h1>
+            </a>
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="linkNav" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linkNav" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linkNav" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linkNav" href="faqs.htm">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linkNav" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mb-5 mt-5">
+        <section class="form">
+            <div class="formularioTitulo">
+                <h2 class="text-center mt-3">Contactanos</h2>
+            </div>
+    
+                <form class="row mt-3">
+                    <div class="col-12">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" required class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido"  required class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" required class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label for="motivoDeConsulta">Deje algun Comentario:</label>
+                        <textarea name="motivoDeConsulta" id="motivoDeConsulta" cols="30" rows="10"
+                        required class="form-control"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <input type="submit" value="Enviar" class="button">
+                    </div>
+                </form>
+            </section>
+    </main>
+
+    <footer class="py-3">
+
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="linkFooter">Inicio</a></li>
+            <li class="nav-item"><a href="html/quienessomos.html" class="linkFooter">Quienes somos</a></li>
+            <li class="nav-item"><a href="html/servicios.html" class="linkFooter">Servicios</a></li>
+            <li class="nav-item"><a href="html/faqs.html" class="linkFooter">FAQs</a></li>
+            <li class="nav-item"><a href="html/contacto.html" class="linkFooter">Contacto</a></li>
+        </ul>
+        <p class="text-center">PontelaQuitatela &copy;2023 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
