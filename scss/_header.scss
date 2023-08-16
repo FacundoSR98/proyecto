@@ -1,0 +1,20 @@
+header {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: $background-color;
+    border-bottom: 2px solid #000000;
+
+    .navbar-brand {
+        display: flex;
+        align-items: flex-end;
+
+        .logo {
+            width: 150px;
+        }
+    }
+    .firstTitle{
+        color: white;
+    }
+    .secondTitle {
+        color: $primary-color;
+    }
+}

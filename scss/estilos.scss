@@ -1,0 +1,413 @@
+@import "variables";
+@import "typography";
+@import "header";
+@import "carrousel";
+@import "mixin";
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $body-font;
+    color: black;
+    background-image: url(/images/skateparkbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linkNav {
+    color: $primary-color;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+        border-radius: 15px;
+    }
+}
+
+
+.main {
+    font-family: $body-font;
+    background-image: url(/images/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    padding: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+}
+
+    .contenedorMain {
+        width: 50%;
+        background-color: $background-color;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0px 7px 0px #7d8471;
+
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+        .firstTitle{
+            color: white;
+        }
+        .secondTitle{
+            color: rgba($primary-color, 0.81);
+        }
+    }
+    
+
+    .fall {
+        animation: fallAnimation 2s ease-in-out;
+      }
+      
+      /* Define la animación llamada fallAnimation */
+      @keyframes fallAnimation {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      
+      /* Mantén la posición fija después de la animación */
+      .fall.stuck {
+        position: sticky;
+        top: 0;
+      }
+  
+    
+    .divisionPagina {
+        font-family: $body-font;
+        background: $background-color;
+        color: black;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 20px 0px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 35px rgb(125, 132, 113);
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: $background-color;
+        box-shadow: 5px 5px 5px 5px #7d8471;
+        
+
+        h3 {
+            border-bottom: 2px solid #7d8471;
+            font-size: 2rem;
+        }
+
+        p {
+            font-family: $body-font;
+            font-size: 1.2rem;
+        }
+    }
+
+    svg {
+        width: 40px;
+        color: #000000;
+    }
+
+.linkFooter {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.linkFooter:hover {
+    background-color: #000000;
+    border-radius: 15px;
+    color: white;
+}
+.tituloServicios {
+    h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: 3rem;
+        border-bottom: #{$primary-color} 3px solid;
+    }
+}
+
+.cardPrincipales {
+    border: none;
+    box-shadow: 0px 5px 15px black;
+    height: 500px;
+}
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+.colorBtn {
+    background-color: $primary-color;
+    color: $background-color;
+}
+
+.cardSecundarias {
+    border: none;
+    box-shadow: 0px 5px 15px black;
+    height: 350px;
+}
+
+.lacosteLogo {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 2s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// Contacts
+main {
+    container {
+        mb-5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 100px);
+            margin-top: 20px;
+        }
+    }
+}
+
+    .form {
+        background-color: rgba($background-color, 0.77);
+        box-shadow: 0px 2px px rgb(112, 111, 111);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+
+        .button {
+            background-color: rgba($primary-color, 0.81);
+            color: $background-color;
+            border: none;
+            width: 100%;
+            max-width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        input {
+            box-shadow: 5px 10px 5px #474747;
+        }
+
+        textarea {
+            box-shadow: 10px 10px 5px #424242;
+        }
+
+        .form-control {
+            margin: 20px 0;
+        }
+
+        .formularioTitulo {
+            border-bottom: #{$primary-color} 3px solid;
+        }
+    }
+
+
+
+// Responsive
+@media (max-width: 501px) {
+    body {
+        background-image: url(/images/skateparkbackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .navbar-brand {
+        align-items: flex-end;
+    }
+
+    .logo{
+        max-width: 30%
+    }
+
+    .firstTitle{
+        font-size: 1.2rem;
+    }
+    .secondTitle{
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        padding-left: 5px;
+    }
+
+    .main {
+        background-image: none;
+        padding: 10px;
+
+        .contenedorMain {
+            width: auto;
+            height: auto;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .divisionPagina {
+            font-size: 1.2rem;
+            padding: 15px 0px;
+            border-radius: 15px;
+        }
+
+        .box {
+            background-color: #ece2c6;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        footer {
+            background-color: #ece2c6;
+        }
+
+        .tituloServicios {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .card {
+                height: 550px;
+                margin-top: 20px;
+            }
+
+            .formularioTitulo {
+                h2 {
+                    font-size: 1.3rem;
+                }
+            }
+
+            label {
+                font-size: 1.3rem;
+            }
+
+            .divisor {
+                margin: 10px 0;
+
+                h3 {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .quienesSomosTitulo {
+                font-size: 1.5rem;
+            }
+
+            .lead {
+                font-size: 1rem;
+            }
+
+            .carousel-item {
+                height: auto;
+            }
+
+            .carousel-caption {
+                h3 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 501px) and (max-width: 1400px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .contenedorMain {
+        width: auto;
+        height: auto;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .tituloServicios {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .card {
+            height: 540px;
+            margin-top: 20px;
+        }
+
+        .quienesSomosTitulo {
+            font-size: 2.5rem;
+        }
+
+        .divisor {
+            margin: 10px 0;
+
+            h3 {
+                font-size: 2rem;
+            }
+        }
+
+        .carousel-item {
+            height: 320px;
+        }
+
+        .carousel-caption {
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
