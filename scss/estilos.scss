@@ -10,7 +10,7 @@
 body {
     font-family: $body-font;
     color: black;
-    background-image: url("../images/skateparkbackground.png");
+    background-image: url(../images/skateparkbackground.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -31,7 +31,7 @@ body {
 
 .main {
     font-family: $body-font;
-    background-image: url("../images/background2.png");
+    background-image: url(../images/background2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -244,7 +244,7 @@ main {
 // Responsive
 @media (max-width: 501px) {
     body {
-        background-image: url("../images/background2.png");
+        background-image: url(../images/background2.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
